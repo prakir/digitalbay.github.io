@@ -1,0 +1,9 @@
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+  Header set Access-Control-Allow-Methods "GET, OPTIONS"
+  Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept, Range"
+  Header set Timing-Allow-Origin "*"
+</IfModule>
+FileETag None
+Header unset ETag
+Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
